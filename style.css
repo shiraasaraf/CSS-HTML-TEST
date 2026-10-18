@@ -43,5 +43,81 @@ main{
    
 }
 
+#main-panel-main-card{
+    display: flex;
+}
+
+#main-panel-main-card-text{
+    color: gray;
+    justify-self: center;
+}
+
+.radar{
+    justify-self: left;
+}
+
+.radar {
+    position: relative;
+    overflow: hidden;
+    width: 248px;
+    height: 248px;
+    margin: 20px auto;
+    border-radius: 50%;
+  
+    box-shadow:
+      0 0 0 1px hsla(0, 0%, 0%, 0.5),
+      inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
+  
+    background:
+      repeating-radial-gradient(
+        transparent 0 23px,
+        #287a33 24px 26px,
+        #0000 27px
+      ),
+      linear-gradient(
+        transparent 49.75%,
+        #0e4c42 0 50.25%,
+        transparent 0
+      ) 50% no-repeat,
+      linear-gradient(
+        90deg,
+        transparent 49.75%,
+        #0e4c42 0 50.25%,
+        transparent 0
+      ) 50% no-repeat,
+      linear-gradient(#333, #111);
+  
+    background-size: 100%, 218px 218px, 218px 218px, 100%;
+  }
+  
+  .sweep {
+    position: absolute;
+    box-sizing: border-box;
+    top: 16px;
+    left: 16px;
+    width: 108px;
+    height: 108px;
+  
+    border-right: 1px solid hsla(145, 50%, 40%, 0.3);
+    border-radius: 100% 0 0 0;
+    transform-origin: 100% 100%;
+  
+    background: linear-gradient(
+      50deg,
+      rgba(34, 34, 34, 0) 56%,
+      hsla(145, 50%, 40%, 1)
+    );
+  
+    animation: sweep 5s infinite linear;
+  }
+  
+  @keyframes sweep {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
 
 
