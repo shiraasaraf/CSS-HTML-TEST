@@ -7,8 +7,14 @@
   'opsz' 24
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
 main{
-    /* background-color: #0D0D12; */
+    background-color: #0D0D12;
 }
 
 #header-icon { 
@@ -17,6 +23,7 @@ main{
     height: 26px;
     border-radius: 20px;
     padding: 4px;
+    
 
 
 }
