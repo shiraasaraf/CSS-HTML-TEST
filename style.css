@@ -45,23 +45,29 @@ main{
 
 #main-panel-main-card{
     display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+
+    border: 2px solid grey;
+    border-radius: 10px;
 }
 
 #main-panel-main-card-text{
     color: gray;
-    justify-self: center;
+    flex: 1;
+    text-align: center;
 }
 
-.radar{
-    justify-self: left;
-}
+
 
 .radar {
     position: relative;
     overflow: hidden;
     width: 248px;
     height: 248px;
-    margin: 20px auto;
+    margin: 0;
+    flex-shrink: 0;
     border-radius: 50%;
   
     box-shadow:
